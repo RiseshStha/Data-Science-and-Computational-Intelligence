@@ -1,0 +1,24 @@
+{
+    "f1_score_weighted": 0.7968253968253968,
+    "f1_score_macro": 0.7968253968253968,
+    "f1_scores_per_class": {
+        "Business": 0.7619047619047619,
+        "Entertainment": 0.8666666666666667,
+        "Health": 0.7619047619047619
+    },
+    "precision_weighted": 0.849251805985552,
+    "recall_weighted": 0.7933333333333333,
+    "silhouette_score": 0.4218864919479475,
+    "purity_score": 0.7933333333333333,
+    "adjusted_rand_index": 0.46374435845299455,
+    "normalized_mutual_info": 0.5181821515221519,
+    "accuracy": 0.7933333333333333,
+    "cluster_purity": {
+        "0": 0.9411764705882353,
+        "1": 0.975,
+        "2": 0.631578947368421
+    },
+    "n_clusters": 3,
+    "n_documents": 150,
+    "n_features": 1503
+}
