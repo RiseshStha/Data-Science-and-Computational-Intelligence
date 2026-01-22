@@ -48,7 +48,7 @@ def predict_cluster(request):
                 input_text=text,
                 predicted_cluster=result['cluster'],
                 predicted_category=result['category'],
-                confidence=result['confidence']
+                confidence=result['similarity_score']
             )
         
         return Response(result, status=status.HTTP_200_OK)

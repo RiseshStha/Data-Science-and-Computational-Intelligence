@@ -1,0 +1,269 @@
+--- Page 1 ---
+ 
+Student Assignment Brief 
+CONFIDENTIAL DOCUMENT 
+This document is intended solely for Softwarica College of IT & E-Commerce students for their own use in 
+completing their assessed work for this module. It must not be passed to third parties or posted on any website.  
+Contents 
+ Assignment Information 
+ Assessed Module Learning Outcomes 
+ Assignment Task 
+ Marking and Feedback 
+ Assignment Support and Academic Integrity 
+ Assessment Marking Criteria 
+Assignment Information 
+Module Name: Intelligent Information Retrieval 
+Module Code: ST7071CEM 
+Assignment Title: Individual Coursework / Viva 
+Assignment Due: 23rd January, 2026 
+--- Page 2 ---
+Assignment Credit: 15 credits 
+Word Count: 3000 words 
+Assignment Type: Coursework 
+Grading: 75% 
+Assessment Overview 
+You will be provided with an overall grade between 0% and 100%. You have one opportunity to pass the 
+assignment at or above 40%. 
+Important Notice 
+The work you submit for this assignment must be your own independent work. More information is 
+available in the 'Assignment Task' section of this assignment brief. 
+Assessed Module Learning Outcomes 
+The Learning Outcomes for this module align with the marking criteria which can be found at the end of 
+this brief. Ensure you understand the marking criteria to ensure successful achievement of the 
+assessment task. 
+1. Demonstrate a sound knowledge of information retrieval principles.  
+2. Apply main data structures used in index construction in Python or a similar high-level language.  
+3. Implement a typical web crawler and query processor, in Python or similar high-level language.  
+4. Acquire knowledge and skill to apply common machine learning methods for text classification and 
+document clustering.  
+5. Build the outline of a minimum viable vertical search engine for text retrieval.  
+ 
+ 
+--- Page 3 ---
+Assignment Task 
+There are two tasks in this coursework. You can use any general-purpose programming language of your 
+choice to perform these tasks. However, Python is recommended. The tasks are specified next.  
+ Task 1: Search Engine  
+Create a vertical search engine comparable to Google Scholar, but specialized in retrieving just 
+papers/books published by a member of Coventry University's Research Centre for Computational 
+Science and Mathematical Modelling : https://pureportal.coventry.ac.uk/en/organisations/ics-research-
+centre-for-computational-science-and-mathematical-mo  
+ That is, at least one of the co-authors is a member of this department.  
+Your system crawls the relevant web pages and retrieves information about all available publications. 
+For each publication, it extracts available data (such as authors, publication year, and title) and the links 
+to both the publication page and the author's profile (also called "pureportal" profile) page.  
+ Make sure you that your crawler is polite, i.e., it preserves the robots.txt rules and does not hit the 
+servers unnecessarily or too fast.  
+ Because of low rate of changes to this information, your crawler may be scheduled to look for new 
+information, say, once per week, but it should ideally be able to do so automatically, as a scheduled 
+task. Every time it runs, it should update the index with the new data. Make sure you apply the required 
+pre-processing tasks to both the crawled data and the users' queries.  
+ From the user's perspective, your system provides an interface like Google Scholar's main page, where 
+the user may enter in queries/keywords concerning the resources they wish to locate. The results will 
+then be shown by your system, arranged by relevancy, in a manner like Google Scholar. However, the 
+search results are limited to this department members' publications. Unless you aim to earn a score of 
+70 or above, the user interface does not need to be web-based (like Google Scholar), and the usual 
+Python interface in your IDE would do. However, for more usability, it would be preferable to be able to 
+click on the printed links rather than copying and pasting them into a browser.  
+Task 2: Document Clustering 
+First, collect several documents that belong to different categories, namely Business, Entertainment and 
+Health. Each document should be at least one sentence (the longer is usually the better). The total 
+number of documents is up to you but should be at le ast 100 (the more is usually the better). You may 
+collect these documents from publicly available web sites such as BBC news websites, but make sure 
+you preserve their copyrights and terms of use and clearly cite them in your work. You may simply copy-
+paste such texts manually and writing an RSS feed reader/crawler to do it automatically is NOT 
+mandatory.  Once you have collected sufficient documents, cluster them using a standard clustering 
+method (e.g., K-means).  
+--- Page 4 ---
+ Finally, use the created model to assign a new document to one of the existing clusters. That is, the user 
+enters a document (e.g., a sentence) and your system outputs the right cluster.  
+ NOTE: You must show in your report and viva that your system suggests the right cluster for variety of 
+inputs, e.g., short and long inputs, those with and without stop worlds, inputs of different topics, as well 
+as more challenging inputs to show the system is robust enough.  
+Submission Instructions 
+Requirement Details 
+File Naming NAME_studentID 
+File Format .docx/.pdf format 
+Submission Method Campus 4.0 platform (submission link provided 2 weeks before deadline) 
+Marking and Feedback 
+How will my assignment be marked? 
+Your assignment will be marked by the Module Team using standardized criteria. 
+How will I receive grades and feedback? 
+Provisional marks will be released once internally moderated. Feedback will be provided alongside 
+grades release within 2 weeks (10 working days). 
+What will I be marked against? 
+Details of the marking criteria for this task can be found in the Assessment Marking Criteria section at 
+the end of this brief. 
+--- Page 5 ---
+Grade Requirements 
+You must achieve 40% or above to pass this assessment. Ensure you understand the marking criteria for 
+successful completion. 
+Assignment Support and Academic Integrity 
+Getting Help 
+If you have any questions about this assignment, please meet your respective module leader or teacher 
+for more information. 
+Language Standards 
+You are expected to use effective, accurate, and appropriate language within this assessment task. 
+Academic Integrity 
+The work you submit must be your own. All sources of information need to be acknowledged and 
+attributed; therefore, you must provide references for all sources of information and acknowledge any 
+tools used in the production of your work, excluding Artificial Intelligence (AI). 
+We use detection software and make routine checks for evidence of academic misconduct. Definitions 
+of academic misconduct, including plagiarism, self-plagiarism, and collusion can be found in Student 
+handbook in Campus 4.0. 
+All cases of suspected academic misconduct are referred to for investigation, the outcomes of which can 
+have profound consequences to your studies. 
+Support for Students with Disabilities 
+If you have a disability, long-term health condition, specific learning difference, mental health diagnosis 
+or symptoms, contact the Student Support Office for assistance. 
+Unable to Submit on Time? 
+If events prevent you from submitting on time, guidance on extenuating circumstances is available in 
+the Student Handbook or from the Student Support Office. 
+--- Page 6 ---
+Administration of Assessment 
+Module Leader Name: Mr. Siddhartha Neupane 
+Module Leader Email: Stw0084@softwarica.edu.np 
+Assignment Category: Written 
+Attempt Type: Standard 
+Component Code: Coursework 
+--- Page 7 ---
+Assessment Criteria 
+Marking Requirement for each Task 
+Requirements   Marks  
+Fully working crawler component  
+Must completely crawl the CU profile in google scholar and subsequent links in BFS manner. It 
+should be scheduled to re-crawl to extract new data automatically.  
+25  
+Construction of Inverted Index  
+Construction of the index based on appropriate data structures studied in the module as opposed 
+to naïve database tables. The index should be updated once new data are received from the 
+crawler component.  
+15  
+Fully working query processor component  
+Displaying results relevant to given queries  
+25  
+Fully working document classification component  
+A standard classification algorithm such as Naïve Bayes Classifier must be used. In addition, the 
+learned model must be used to identify the right classification (e.g., Business, Health or Politics) 
+for a given input. Various inputs must be used both in the report (via screenshots) and the viva to 
+show that the system is accurate and robust.  
+25  
+Overall usability  
+Acceptable response time, accuracy of results, nice interface, readable results sorted by 
+relevance, subject grouping, and anything else that might affect the usability of the product.  
+  
+10  
+Markin allocation guideline to students 
+0-39  40-49  50-59  60-70  70+  80+  
+Work mainly 
+incomplete and 
+/or weaknesses 
+in most areas  
+Most elements 
+completed; 
+weaknesses 
+outweigh 
+strengths  
+Most elements 
+are strong, minor 
+weaknesses  
+Strengths in all 
+elements  
+Most work 
+exceeds the 
+standard 
+expected  
+All work substantially 
+exceeds the standard 
+expected  
+--- Page 8 ---
+Marking Rubric 
+Grade  Answer Relevance  Report  Code And Results  
+First  
+  
+≥70  
+Innovative response, answers the question fully, 
+addressing the learning objectives of the assessment 
+task. Evidence of critical analysis, synthesis and 
+evaluation.  
+A clear, consistent in-depth critical 
+and evaluative report. Engagement 
+with theoretical and conceptual 
+analysis. Correctly referenced.  
+Code is well written and follows a 
+logical structure. Fully Working Crawler 
+Components and Construction of 
+Inverted Index.  
+Upper 
+Second   
+  
+60-69  
+A very good attempt to address the objectives of the 
+assessment task with an emphasis on those elements 
+requiring critical review.  
+A generally clear line of critical and 
+evaluative argument is presented. 
+Relationships between statements 
+and sections are easy to follow, and 
+there is a sound, coherent structure. 
+Correctly referenced in the main.  
+Code is readable and functions as 
+expected. Crawler and Inverted index 
+component should be working    
+  
+Lower 
+Second  
+  
+50-59  
+Competently addresses objectives, but may contain 
+errors or omissions and critical discussion of issues may 
+be superficial or limited in places.  
+Some critical discussion, but the 
+argument is not always convincing, 
+and the work shows only a partial 
+understanding of the key concepts. 
+Referencing is not always correctly 
+presented.  
+Code functions as expected. Crawler 
+components works properly and partial 
+construction of Inverted Index  
+Third  
+  
+40-49  
+Addresses most objectives of the assessment task, with 
+some notable omissions. The structure is unclear in parts, 
+and there is limited analysis.  
+Limited understanding of the 
+theoretical concepts. Limited 
+justification of method and results. 
+Referencing has some errors.  
+Code has most of the functionality 
+implemented. Limited construction of 
+inverted index and crawler component 
+works partially.  
+Fail  
+  
+<40  
+Some deviation from the objectives of the assessment 
+task. May not consistently address the assignment brief. 
+At the lower end fails to answer the question set or 
+address the learning outcomes. There is minimal 
+evidence of analysis or evaluation.  
+Descriptive with no evidence of 
+theoretical engagement. At the 
+lower end displays a minimal level 
+of understanding. Poor presentation 
+of references.  
+Code has some functionality 
+implemented. With no implementation 
+of construction of Inverted Index, 
+Crawler component not Working.  
+Late 
+Submission  
+0  0  0  
+ 
+ 
+Softwarica College of IT & E-Commerce | In collaboration with Coventry University 
+--- Page 9 ---
+This document is confidential and intended solely for enrolled students. 
+ 

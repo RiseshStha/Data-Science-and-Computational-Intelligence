@@ -14,8 +14,6 @@ from datetime import datetime
 
 from utils import TextProcessor, DataHelper
 
-# --- REMOVED LOCAL NLTK SETUP & TextPreprocessor (Moved to utils.py for DRY) ---
-
 
 class Crawler:
     SEED_URL = "https://pureportal.coventry.ac.uk/en/organisations/ics-research-centre-for-computational-science-and-mathematical-mo"
