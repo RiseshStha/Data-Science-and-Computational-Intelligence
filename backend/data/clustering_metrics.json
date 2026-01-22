@@ -1,7 +1,7 @@
 {
-    "silhouette_score": 0.01301412510430628,
-    "davies_bouldin_score": 5.709474002953975,
-    "calinski_harabasz_score": 2.6176888113267114,
-    "inertia": 141.41011444989448,
+    "silhouette_score": 0.053737934678792953,
+    "davies_bouldin_score": 3.846471401477862,
+    "calinski_harabasz_score": 8.045225185486638,
+    "inertia": 122.17510986328125,
     "n_clusters": 3
 }

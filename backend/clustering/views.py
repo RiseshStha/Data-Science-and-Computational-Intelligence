@@ -40,7 +40,7 @@ def predict_cluster(request):
         clustering_service = get_clustering_service()
         
         # Predict
-        result = clustering_service.predict_cluster(text, return_probabilities)
+        result = clustering_service.predict_cluster(text)
         
         # Save prediction to database
         if 'error' not in result:

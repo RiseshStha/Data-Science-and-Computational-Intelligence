@@ -1,38 +1,38 @@
 {
-    "2": [
-        "year",
-        "say",
-        "album",
-        "film",
-        "best",
-        "peopl",
-        "trump",
-        "budget",
-        "new",
-        "help"
-    ],
     "0": [
-        "flu",
-        "hospit",
-        "nh",
-        "latest",
-        "vaccin",
-        "rise",
-        "use",
-        "say",
-        "winter",
-        "case"
+        "film",
+        "album",
+        "best",
+        "review",
+        "year",
+        "music",
+        "new",
+        "2025",
+        "movie",
+        "right"
     ],
     "1": [
-        "inquiri",
         "covid",
-        "covid inquiri",
+        "flu",
+        "inquiry",
         "report",
-        "pandem",
-        "govern",
-        "respons",
-        "inquiri report",
-        "decis",
-        "cost"
+        "nhs",
+        "says",
+        "hospital",
+        "government",
+        "say",
+        "rise"
+    ],
+    "2": [
+        "trump",
+        "people",
+        "crisis",
+        "budget",
+        "tax",
+        "economy",
+        "plan",
+        "help",
+        "uk",
+        "code"
     ]
 }
