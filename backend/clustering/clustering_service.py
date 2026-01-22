@@ -119,13 +119,13 @@ class ClusteringServiceEmbeddings:
         df['processed_text'] = df['text'].apply(self.preprocess_text)
         print(f"[OK] Preprocessed {len(df)} documents")
 
-        # 1️⃣ Create embeddings
+        # 1️ Create embeddings
         print("[INFO] Generating sentence embeddings (Dataset size: {0})...".format(len(df)))
         # Load model explicitly here to ensure it's ready for training
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.embeddings = self.embedding_model.encode(df['processed_text'].tolist(), show_progress_bar=True)
 
-        # 2️⃣ K-Means clustering
+        # 2️ K-Means clustering
         self.kmeans_model = KMeans(
             n_clusters=n_clusters,
             init='k-means++',
@@ -136,16 +136,16 @@ class ClusteringServiceEmbeddings:
         clusters = self.kmeans_model.fit_predict(self.embeddings)
         df['cluster'] = clusters
 
-        # 3️⃣ Extract top keywords for interpretation
+        # 3️ Extract top keywords for interpretation
         print("\n[Cluster Interpretation]")
         self.top_terms = self.get_top_keywords(df, clusters)
         for cid, terms in self.top_terms.items():
             print(f"  Cluster {cid}: {', '.join(terms[:5])}...")
 
-        # 4️⃣ Intrinsic evaluation
+        # 4️ Intrinsic evaluation
         self._evaluate_model(clusters)
 
-        # 5️⃣ Save models
+        # 5️ Save models
         with open(self.models_dir / 'kmeans_model.pkl', 'wb') as f:
             pickle.dump(self.kmeans_model, f)
             
@@ -155,7 +155,7 @@ class ClusteringServiceEmbeddings:
         df['predicted_category'] = df['cluster'].apply(lambda x: f"Cluster {x}")
         df.to_csv(self.data_dir / 'clustered_documents.csv', index=False)
 
-        # 6️⃣ Visualization
+        # 6️ Visualization
         self.generate_visualization(df, n_clusters)
         print("\n[ClusteringService] [OK] Training Completed.")
         return df
